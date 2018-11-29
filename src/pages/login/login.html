@@ -1,0 +1,33 @@
+<ion-content padding class="bg">
+
+  <ion-row class="logo">MASAHR</ion-row>
+  <ion-row class="input-row">
+    <ion-col class="icon-col" no-padding col-2>
+      <ion-icon class="icons" name="person"></ion-icon>
+    </ion-col>
+    <ion-col no-padding col-10>
+      <ion-item class="inputBox">
+        <ion-label floating>User Name</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row class="input-row">
+    <ion-col class="icon-col" no-padding col-2>
+      <ion-icon class="icons" name="lock"></ion-icon>
+    </ion-col>
+    <ion-col no-padding col-10>
+      <ion-item class="inputBox">
+        <ion-label floating>Password</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="button-row">
+    <button ion-button round class="btn" (click)="gotoHomePage()" >Enter</button>
+  </ion-row>
+  <ion-row class="forgot">
+    Forgot Password ?
+  </ion-row>
+</ion-content>
