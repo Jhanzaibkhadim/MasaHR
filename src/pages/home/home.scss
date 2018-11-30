@@ -11,46 +11,71 @@ page-home {
     .imagee{
         border-radius: 50%;
         width: 30%;
-        border: 1px solid white;
+        border: 2px solid white;
         background: black;
         padding: 3px;
     }
     .name{
         width:100%;
-        font-size:1.35em;
+        font-size:1.25em;
         text-transform: uppercase;
-       justify-content: center;
-       font-weight: 200;
-       padding-top:1%;
+        justify-content: center;
+        font-weight: 200;
+        padding-top:1%;
     }
     .department{
         width:100%;
-        font-size:1.2em;
-       justify-content: center;
-       font-weight: 200;
-       padding-top:1%;
+        font-size:0.9em;
+        justify-content: center;
+        font-weight: 200;
+        padding-top:1%;
+        margin-bottom: 5%;
     }
     .designation{
         width:100%;
+        font-weight: bold;
         font-size:1em;
-       justify-content: center;
-       font-weight: 200;
-       padding-top:1%;
+        justify-content: center;
+        // font-weight: 200;
+        padding-top:1%;
+    }
+    .titledash .toolbar-title{
+        color: white !important;
+    }
+    .toolbar-background{
+        background: transparent !important;
+        color: white !important;
     }
     .boxes{
         width:90%;
         margin:auto;
         justify-content: center;
+        // padding-top:5%;
     }
     .boxes ion-col{
-        border:2px solid black;
+        border:2px solid rgb(0, 41, 80);
         border-radius: 10px;
         margin: auto;
+        // padding-top:10px;
+        // padding-bottom:10px;
+        height: 28vw;
+        background: black;
     }
+
     .boxes ion-icon{
-        
+        font-size: 2em;
     }
-    .boxes ion-row{
+    .boxes .img-row{
         justify-content: center;
+        // font-size: 12px;
+        align-items:center;
+        height: 60%;
+        width: 100%;
+    }
+    .boxes .text-row{
+        justify-content: center;
+        font-size: 12px;
+        // align-items:center;
+        height: 40%;
     }
 }
