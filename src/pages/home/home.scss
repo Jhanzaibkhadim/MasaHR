@@ -15,4 +15,26 @@ page-home {
         background: black;
         padding: 3px;
     }
+    .name{
+        width:100%;
+        font-size:1.35em;
+        text-transform: uppercase;
+       justify-content: center;
+       font-weight: 200;
+       padding-top:1%;
+    }
+    .department{
+        width:100%;
+        font-size:1.2em;
+       justify-content: center;
+       font-weight: 200;
+       padding-top:1%;
+    }
+    .designation{
+        width:100%;
+        font-size:1em;
+       justify-content: center;
+       font-weight: 200;
+       padding-top:1%;
+    }
 }
