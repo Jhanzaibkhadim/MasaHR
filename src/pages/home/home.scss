@@ -41,16 +41,41 @@ page-home {
     }
     .titledash .toolbar-title{
         color: white !important;
+        text-align: center;
     }
     .toolbar-background{
         background: transparent !important;
         color: white !important;
+    }
+    .menu-icon{
+        color: white;
+    }
+    .edit-div{
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        height: 6vw;
+    }
+    .edit{
+        // position: absolute;
+        text-align: center;
+        width: 6%;
+        // height: 4%;
+        left: 18px;
+        font-size: 1em;
+        margin: auto;
+        background: black;
+        border: 1px solid;
+        border-radius: 79%;
     }
     .boxes{
         width:90%;
         margin:auto;
         justify-content: center;
         // padding-top:5%;
+    }
+    .svg-icon{
+        width:25%;
     }
     .boxes ion-col{
         border:2px solid rgb(0, 41, 80);

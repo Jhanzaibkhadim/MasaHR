@@ -1,0 +1,138 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title class="titledash">Basic Information</ion-title>
+    <button ion-button menuToggle end>
+      <ion-icon class="menu-icon" name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="bg" padding>
+
+  <ion-row class="top-row">
+
+    <ion-searchbar class="srch" [(ngModel)]="myInput" [showCancelButton]="shouldShowCancel" (ionInput)="onInput($event)"
+      (ionCancel)="onCancel($event)">
+    </ion-searchbar>
+
+    <ion-row class="top-card">
+      <ion-col no-padding col-2>
+        <img class="imagee" src="assets/imgs/Dashboard/person.jpg" />
+      </ion-col>
+      <ion-col col-6 no-padding>
+        <ion-row class="name">
+          MOHAMMED
+        </ion-row>
+        <ion-row class="designation">
+          Sales Manager
+        </ion-row>
+      </ion-col>
+      <ion-col class="icon-col" no-padding col-2>
+        <div class="notification-count">21</div>
+        <ion-icon class="notification-icon" name="notifications-outline"></ion-icon>
+      </ion-col>
+      <ion-col class="icon-col" no-padding col-2>
+        <ion-icon class="notification-icon" ios="ios-calendar" md="md-calendar"></ion-icon>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="boxes">
+      <ion-col col-6 no-padding>
+        <ion-row class="img-row">
+          <img class="svg-icon" src="/assets/imgs/dashboard/person.svg">
+        </ion-row>
+        <ion-row class="text-row">
+          Basic Information
+        </ion-row>
+      </ion-col>
+      <ion-col col-6 no-padding>
+        <ion-row class="img-row">
+          <img class="svg-icon" src="/assets/imgs/basic/loc.svg">
+        </ion-row>
+        <ion-row class="text-row">
+          Accomodation
+        </ion-row>
+      </ion-col>
+    </ion-row>
+    <ion-row class="boxes">
+      <ion-col col-6 no-padding>
+        <ion-icon class="add" ios="ios-add-circle" md="md-add-circle"></ion-icon>
+        <ion-row class="img-row">
+          <!-- <ion-icon name="notifications-outline"></ion-icon> -->
+          <img class="svg-icon" src="/assets/imgs/basic/bank.svg">
+        </ion-row>
+        <ion-row class="text-row">
+          Bank Statements
+        </ion-row>
+      </ion-col>
+      <ion-col col-6 no-padding>
+        <ion-icon class="add" ios="ios-add-circle" md="md-add-circle"></ion-icon>
+        <ion-row class="img-row">
+
+          <img class="svg-icon" src="/assets/imgs/basic/qualif.svg">
+        </ion-row>
+        <ion-row class="text-row">
+          Qualifications
+        </ion-row>
+      </ion-col>
+    </ion-row>
+    <ion-row class="boxes">
+      <ion-col col-6 no-padding>
+        <ion-row class="img-row">
+          <img class="svg-icon" src="/assets/imgs/basic/Skills.svg">
+        </ion-row>
+        <ion-row class="text-row">
+          Skills/Lost
+        </ion-row>
+      </ion-col>
+      <ion-col col-6 no-padding>
+        <ion-row class="img-row">
+          <img class="svg-icon" src="/assets/imgs/basic/profit.svg">
+        </ion-row>
+        <ion-row class="text-row">
+          Beneits
+        </ion-row>
+      </ion-col>
+    </ion-row>
+    <ion-row class="boxes">
+      <ion-col col-6 no-padding>
+        <ion-row class="img-row">
+          <img class="svg-icon" src="/assets/imgs/basic/guarantee.svg">
+        </ion-row>
+        <ion-row class="text-row">
+          Guarantee
+        </ion-row>
+      </ion-col>
+      <ion-col col-6 no-padding>
+        <ion-row class="img-row">
+          <ion-icon ios="ios-document" md="md-document"></ion-icon>
+        </ion-row>
+        <ion-row class="text-row">
+          Health File
+        </ion-row>
+      </ion-col>
+    </ion-row>
+    <ion-row class="boxes">
+      <ion-col col-6 no-padding>
+        <ion-row class="img-row">
+          <ion-icon ios="ios-medkit" md="md-medkit"></ion-icon>
+        </ion-row>
+        <ion-row class="text-row">
+          Medical Insurance
+        </ion-row>
+      </ion-col>
+      <ion-col col-6 no-padding>
+        <ion-row class="img-row">
+          <ion-icon ios="ios-document" md="md-document"></ion-icon>
+        </ion-row>
+        <ion-row class="text-row">
+          Forms
+        </ion-row>
+      </ion-col>
+    </ion-row>
+
+  </ion-row>
+</ion-content>

@@ -1,0 +1,143 @@
+page-basic-information {
+
+        .bg{
+            background: rgb(0, 41, 80);
+            color: white;
+        }
+        .top-card{
+            background: black;
+            border-radius: 10px;
+            padding-left: 10px;
+            padding-top: 7px;
+            padding-bottom: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+        }
+        .searchbar-input{
+            background: black !important;
+            border-radius: 20px !important;
+        }
+        .srch{
+            padding:0px !important;
+        }
+        .imagee{
+            border-radius: 50%;
+            // width: 30%;
+            border: 2px solid white;
+            background: black;
+            padding: 3px;
+        }
+        .name{
+            width:100%;
+            font-size:1.15em;
+            text-transform: uppercase;
+            // justify-content: center;
+            font-weight: 200;
+            padding-top:1%;
+            padding-left: 5%;
+        }
+        .icon-col{
+            text-align: center;
+            margin: auto;
+        }
+        .notification-count{
+            background: yellow;
+            border-radius: 56%;
+            position: absolute;
+            width: 6vw;
+            color: black;
+            padding: 2px;
+            left: 27px;
+            top: -11px;
+            font-size: 11px;
+        }
+        .notification-icon{
+            font-size: 2.3em;
+        }
+        
+        .designation{
+            width:100%;
+            // font-weight: bold;
+            font-size:1em;
+            // justify-content: center;
+            // font-weight: 200;
+            padding-top:1%;
+            padding-left: 5%;
+        }
+        .titledash .toolbar-title{
+            color: white !important;
+            text-align: center;
+        }
+        .toolbar-background{
+            background: transparent !important;
+            color: white !important;
+        }
+        .menu-icon{
+            color: white;
+        }
+        .edit-div{
+            width: 100%;
+            position: absolute;
+            text-align: center;
+            height: 6vw;
+        }
+        .edit{
+            // position: absolute;
+            text-align: center;
+            width: 6%;
+            // height: 4%;
+            left: 18px;
+            font-size: 1em;
+            margin: auto;
+            background: black;
+            border: 1px solid;
+            border-radius: 79%;
+        }
+        .boxes{
+            width:90%;
+            margin:auto;
+            justify-content: center;
+            // padding-top:5%;
+        }
+        .svg-icon{
+            width:25%;
+        }
+        .add{
+            color: white;
+           
+            border-radius: 50%;
+            position: absolute;
+            right: 4px;
+            font-size: 1.5em !important;
+            top: 3px
+        }
+        .boxes ion-col{
+            border:2px solid rgb(0, 41, 80);
+            border-radius: 10px;
+            margin: auto;
+            // padding-top:10px;
+            // padding-bottom:10px;
+            height: 28vw;
+            background: black;
+        }
+    
+        .boxes ion-icon{
+            font-size: 2em;
+        }
+        .boxes .img-row{
+            justify-content: center;
+            // font-size: 12px;
+            align-items:center;
+            height: 60%;
+            width: 100%;
+        }
+        .boxes .text-row{
+            justify-content: center;
+            font-size: 12px;
+            // align-items:center;
+            height: 40%;
+        }
+    
+    
+}
