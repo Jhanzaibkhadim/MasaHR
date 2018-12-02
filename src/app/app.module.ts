@@ -10,6 +10,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginPage } from '../pages/login/login';
 import { BasicInformationPage } from '../pages/basic-information/basic-information';
+import { OverviewPage } from '../pages/overview/overview';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { BasicInformationPage } from '../pages/basic-information/basic-informati
     ListPage,
     LoginPage,
     BasicInformationPage,
+    OverviewPage,
   ],
   imports: [
     BrowserModule,
@@ -30,6 +32,7 @@ import { BasicInformationPage } from '../pages/basic-information/basic-informati
     ListPage,
     LoginPage,
     BasicInformationPage,
+    OverviewPage,
   ],
   providers: [
     StatusBar,

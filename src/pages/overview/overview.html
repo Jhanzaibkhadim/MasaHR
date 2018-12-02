@@ -1,18 +1,130 @@
-<!--
-  Generated template for the OverviewPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
   <ion-navbar>
-    <ion-title>overview</ion-title>
+    <ion-title class="titledash">overview</ion-title>
+    <button ion-button menuToggle end>
+      <ion-icon class="menu-icon" name="menu"></ion-icon>
+    </button>
   </ion-navbar>
+
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content class="bg" padding>
+  <ion-searchbar class="srch" [(ngModel)]="myInput" [showCancelButton]="shouldShowCancel" (ionInput)="onInput($event)"
+    (ionCancel)="onCancel($event)">
+  </ion-searchbar>
 
+  <ion-row class="top-card">
+    <ion-col no-padding col-2>
+      <img class="imagee" src="/assets/imgs/Dashboard/person.jpg" />
+    </ion-col>
+    <ion-col col-6 no-padding>
+      <ion-row class="name">
+        Attendance
+      </ion-row>
+      <ion-row class="designation">
+        02 December 2019
+      </ion-row>
+    </ion-col>
+    <ion-col class="icon-col" no-padding col-2>
+      <div class="notification-count">21</div>
+      <ion-icon class="notification-icon" name="notifications-outline"></ion-icon>
+    </ion-col>
+    <ion-col class="icon-col" no-padding col-2>
+      <ion-icon class="notification-icon" ios="ios-calendar" md="md-calendar"></ion-icon>
+    </ion-col>
+
+
+  </ion-row>
+
+  <ion-row class="times-row" >
+   
+    <ion-col col-4 no-padding>
+      <div class="outerCircle">
+        <div class="innercircle">
+          <ion-row class="timein">
+            8:00 AM
+
+          </ion-row>
+          <ion-row class="timeout">
+            5:00 PM
+
+          </ion-row>
+        </div>
+      </div>
+    </ion-col>
+    <ion-col col-8 no-padding>
+      <ion-row class="time-row">
+        <div class="timeDiv">ENTRY TIME :</div>
+        <div class="timeDiv2">8:30 AM</div>
+        <div class="timeDiv">EXIT TIME :</div>
+        <div class="timeDiv2">5:00 PM</div>
+        <div class="timeDiv">DELAYED :</div>
+        <div class="timeDiv2">00:30 M</div>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+
+
+  <ion-row class="boxes">
+    <ion-col col-4 no-padding>
+      <ion-row class="img-row">
+          <ion-icon ios="ios-mail" md="md-mail"></ion-icon>
+      </ion-row>
+      <ion-row class="text-row">
+        Inbox
+      </ion-row>
+    </ion-col>
+    <ion-col col-4 no-padding>
+        <div class="notification-count-div">21</div>
+      <ion-row class="img-row">
+        <img class="svg-icon" src="/assets/imgs/basic/loc.svg">
+      </ion-row>
+      <ion-row class="text-row">
+
+        Mission
+      </ion-row>
+    </ion-col>
+    <ion-col col-4 no-padding>
+        <div class="notification-count-div">21</div>
+      <ion-row class="img-row">
+        <img class="svg-icon" src="/assets/imgs/dashboard/vacations.svg">
+      </ion-row>
+      <ion-row class="text-row">
+        Vacation
+      </ion-row>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="boxes">
+    <ion-col col-4 no-padding>
+      <ion-row class="img-row">
+        <img class="svg-icon" src="/assets/imgs/dashboard/Money-bag.svg">
+      </ion-row>
+      <ion-row class="text-row">
+       Salary
+      </ion-row>
+    </ion-col>
+    <ion-col col-4 no-padding>
+      <ion-row class="img-row">
+          <ion-icon ios="ios-stats" md="md-stats"></ion-icon>
+
+        <!-- <img class="svg-icon" src="/assets/imgs/basic/loc.svg"> -->
+      </ion-row>
+      <ion-row class="text-row">
+       Evaluation
+      </ion-row>
+    </ion-col>
+    <ion-col col-4 no-padding>
+      <ion-row class="img-row">
+        <!-- <img class="svg-icon" src="/assets/imgs/basic/loc.svg"> -->
+        <ion-icon ios="ios-settings" md="md-settings"></ion-icon>
+      </ion-row>
+      <ion-row class="text-row">
+        Support
+      </ion-row>
+    </ion-col>
+  </ion-row>
 </ion-content>

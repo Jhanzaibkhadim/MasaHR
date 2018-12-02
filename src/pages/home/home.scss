@@ -1,8 +1,12 @@
 page-home {
 
-    .bg{
-        background: rgb(0, 41, 80);
-        color: white;
+    .bg{ 
+        background: url(../assets/imgs/logos/login_background@2x.png) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        color:white
     }
     .img-div{
         width: 100%;
@@ -12,7 +16,7 @@ page-home {
         border-radius: 50%;
         width: 30%;
         border: 2px solid white;
-        background: black;
+        background: transparent;
         padding: 3px;
     }
     .name{
@@ -42,6 +46,7 @@ page-home {
     .titledash .toolbar-title{
         color: white !important;
         text-align: center;
+        text-transform: uppercase ;
     }
     .toolbar-background{
         background: transparent !important;
@@ -69,7 +74,7 @@ page-home {
         border-radius: 79%;
     }
     .boxes{
-        width:90%;
+        width:100%;
         margin:auto;
         justify-content: center;
         // padding-top:5%;
@@ -78,13 +83,13 @@ page-home {
         width:25%;
     }
     .boxes ion-col{
-        border:2px solid rgb(0, 41, 80);
+        // border:2px solid rgba(0, 41, 80, 0);
         border-radius: 10px;
         margin: auto;
-        // padding-top:10px;
+        padding:2px;
         // padding-bottom:10px;
-        height: 28vw;
-        background: black;
+        height: 30vw;
+        // background: #2C374D;
     }
 
     .boxes ion-icon{
@@ -96,11 +101,21 @@ page-home {
         align-items:center;
         height: 60%;
         width: 100%;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        // background: #2C374D;
+        background: black;
     }
     .boxes .text-row{
         justify-content: center;
         font-size: 12px;
         // align-items:center;
         height: 40%;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        // background: #2C374D;
+        background: black;
+
     }
+
 }

@@ -1,31 +1,43 @@
 page-basic-information {
 
-        .bg{
-            background: rgb(0, 41, 80);
-            color: white;
-        }
+    .bg{ 
+        background: url(../assets/imgs/logos/login_background@2x.png) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        color:white
+    }
         .top-card{
-            background: black;
+            background: #293446;
             border-radius: 10px;
             padding-left: 10px;
             padding-top: 7px;
             padding-bottom: 5px;
             margin-top: 10px;
             margin-bottom: 10px;
-
+            width:100%;
         }
         .searchbar-input{
-            background: black !important;
+            background:#293446 !important;
             border-radius: 20px !important;
         }
         .srch{
             padding:0px !important;
         }
+         
+        .searchbar-ios{
+            padding: 0 !important;
+            min-height: 44px;
+            border-top: none !important;
+            border-bottom:none !important;
+            background:transparent !important;
+        }
         .imagee{
             border-radius: 50%;
             // width: 30%;
             border: 2px solid white;
-            background: black;
+            background: transparent;
             padding: 3px;
         }
         .name{
@@ -68,6 +80,10 @@ page-basic-information {
         .titledash .toolbar-title{
             color: white !important;
             text-align: center;
+            text-transform: uppercase ;
+            padding:0px !important;
+        overflow: visible !important;
+
         }
         .toolbar-background{
             background: transparent !important;
@@ -90,12 +106,12 @@ page-basic-information {
             left: 18px;
             font-size: 1em;
             margin: auto;
-            background: black;
+            background: transparent;
             border: 1px solid;
             border-radius: 79%;
         }
         .boxes{
-            width:90%;
+            width:100%;
             margin:auto;
             justify-content: center;
             // padding-top:5%;
@@ -104,7 +120,7 @@ page-basic-information {
             width:25%;
         }
         .add{
-            color: white;
+            color: #999;
            
             border-radius: 50%;
             position: absolute;
@@ -113,13 +129,13 @@ page-basic-information {
             top: 3px
         }
         .boxes ion-col{
-            border:2px solid rgb(0, 41, 80);
+            border:2px solid rgba(0, 41, 80, 0);
             border-radius: 10px;
             margin: auto;
-            // padding-top:10px;
+            padding:2px;
             // padding-bottom:10px;
-            height: 28vw;
-            background: black;
+            height: 30vw;
+            // background: #2C374D;
         }
     
         .boxes ion-icon{
@@ -131,12 +147,18 @@ page-basic-information {
             align-items:center;
             height: 60%;
             width: 100%;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            background: #2C374D;
         }
         .boxes .text-row{
             justify-content: center;
             font-size: 12px;
             // align-items:center;
             height: 40%;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            background: #2C374D;
         }
     
     
