@@ -25,7 +25,11 @@ page-basic-information {
         .srch{
             padding:0px !important;
         }
-         
+        .srch-icon{
+            color: white;
+            font-size: 2em;
+            margin-left: 5px;
+        }
         .searchbar-ios{
             padding: 0 !important;
             min-height: 44px;
@@ -76,6 +80,10 @@ page-basic-information {
             // font-weight: 200;
             padding-top:1%;
             padding-left: 5%;
+        }
+        .titledash{
+            width: 90% !important;
+            float: right;
         }
         .titledash .toolbar-title{
             color: white !important;

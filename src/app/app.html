@@ -1,16 +1,44 @@
-<ion-menu [content]="content" side="right">
-  <ion-header>
+<ion-menu  [content]="content" side="right">
+  <!-- <ion-header>
     <ion-toolbar>
       <ion-title>Menu</ion-title>
     </ion-toolbar>
-  </ion-header>
+  </ion-header> -->
 
-  <ion-content>
-    <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+  <ion-content class="bg-side-menu">
+      <ion-row class="top-row-menu">
+          <div class="menuimg-div">
+            <img class="menuimagee" src="/assets/imgs/dashboard/person.jpg" />
+          </div>
+         <!-- <div class="edit-div">
+          <div class="edit">
+            <ion-icon ios="ios-create" md="md-create"></ion-icon>
+          </div> 
+         </div>-->
+          <ion-row class="menuname">
+            MOHAMMED
+          </ion-row>
+          <ion-row class="menudesignation">
+            Sales Manager
+          </ion-row>
+          <ion-row class="menudepartment">
+              Sales Department
+            </ion-row>
+        </ion-row>
+        <ion-row>
+            <ion-col class="icon-col-menu" no-padding col-6>
+                <ion-row class="notification-count-menu">21</ion-row>
+                <ion-icon class="notification-icon-menu" name="notifications-outline"></ion-icon>
+              </ion-col>
+              <ion-col class="icon-col-menu" no-padding col-6>
+                <ion-icon class="notification-icon-menu" ios="ios-calendar" md="md-calendar"></ion-icon>
+              </ion-col>
+        </ion-row>
+    <ion-row >
+      <button class="menu-btns" menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
         {{p.title}}
       </button>
-    </ion-list>
+    </ion-row>
   </ion-content>
 
 </ion-menu>

@@ -14,3 +14,83 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.bg-side-menu{ 
+    background: url(../assets/imgs/logos/login_background@2x.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color:white
+}
+.menu-btns{
+    background: transparent !important;
+    color:white !important;
+}
+
+.top-row-menu{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 3%;
+}
+
+.menuimg-div{
+    width: 100%;
+    text-align: center;
+}
+.menuimagee{
+    border-radius: 50%;
+    width: 30%;
+    border: 2px solid white;
+    background: transparent;
+    padding: 3px;
+}
+.menuname{
+    width:100%;
+    font-size:1.25em;
+    text-transform: uppercase;
+    justify-content: center;
+    font-weight: 200;
+    padding-top:1%;
+}
+.menudepartment{
+    width:100%;
+    font-size:0.9em;
+    justify-content: center;
+    font-weight: 200;
+    padding-top:1%;
+    margin-bottom: 5%;
+}
+.menudesignation{
+    width:100%;
+    font-weight: bold;
+    font-size:1em;
+    justify-content: center;
+    // font-weight: 200;
+    padding-top:1%;
+}
+.icon-col-menu{
+    text-align: center;
+    margin: auto;
+}
+ 
+.notification-count-menu{
+    background: red;
+    border-radius: 56%;
+    position: absolute;
+    width: 6vw;
+    color: white;
+    padding: 2px;
+    height: 6vw;
+    justify-content: center;
+    align-items: center;
+    left: 75px;
+    text-align: center;
+    top: -10px;
+    font-size: 11px
+}
+.notification-icon-menu{
+    font-size: 2.3em;
+}

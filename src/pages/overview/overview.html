@@ -1,6 +1,7 @@
 <ion-header>
 
   <ion-navbar>
+      <ion-icon class="srch-icon" (click)="showSearchbr()" ios="ios-search" md="md-search"></ion-icon>
     <ion-title class="titledash">overview</ion-title>
     <button ion-button menuToggle end>
       <ion-icon class="menu-icon" name="menu"></ion-icon>
@@ -12,11 +13,11 @@
 
 
 <ion-content class="bg" padding>
-  <ion-searchbar class="srch" [(ngModel)]="myInput" [showCancelButton]="shouldShowCancel" (ionInput)="onInput($event)"
+  <ion-searchbar *ngIf="showbar == true" class="srch" [(ngModel)]="myInput" [showCancelButton]="shouldShowCancel" (ionInput)="onInput($event)"
     (ionCancel)="onCancel($event)">
   </ion-searchbar>
 
-  <ion-row class="top-card">
+  <!-- <ion-row class="top-card">
     <ion-col no-padding col-2>
       <img class="imagee" src="/assets/imgs/dashboard/person.jpg" />
     </ion-col>
@@ -37,7 +38,7 @@
     </ion-col>
 
 
-  </ion-row>
+  </ion-row> -->
 
   <ion-row class="times-row" >
    
@@ -78,7 +79,7 @@
       </ion-row>
     </ion-col>
     <ion-col col-4 no-padding>
-        <div class="notification-count-div">21</div>
+        <ion-row class="notification-count-div">21</ion-row>
       <ion-row class="img-row">
         <img class="svg-icon" src="/assets/imgs/basic/mission.svg">
       </ion-row>
@@ -88,7 +89,8 @@
       </ion-row>
     </ion-col>
     <ion-col col-4 no-padding>
-        <div class="notification-count-div">21</div>
+      <ion-row class="notification-count-div">21</ion-row>
+      <!-- <div class="notification-count-div">21</div> -->
       <ion-row class="img-row">
         <img class="svg-icon" src="/assets/imgs/dashboard/vacations.svg">
       </ion-row>

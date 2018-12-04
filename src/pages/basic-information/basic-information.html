@@ -1,6 +1,8 @@
 <ion-header>
 
   <ion-navbar>
+      <ion-icon class="srch-icon" (click)="showSearchbr()" ios="ios-search" md="md-search"></ion-icon>
+
     <ion-title class="titledash">Basic Information</ion-title>
     <button ion-button menuToggle end>
       <ion-icon class="menu-icon" name="menu"></ion-icon>
@@ -14,11 +16,11 @@
 
   <ion-row class="top-row">
 
-    <ion-searchbar class="srch" [(ngModel)]="myInput" [showCancelButton]="shouldShowCancel" (ionInput)="onInput($event)"
+    <ion-searchbar *ngIf="showbar== true" class="srch" [(ngModel)]="myInput" [showCancelButton]="shouldShowCancel" (ionInput)="onInput($event)"
       (ionCancel)="onCancel($event)">
     </ion-searchbar>
 
-    <ion-row class="top-card">
+    <!-- <ion-row class="top-card">
       <ion-col no-padding col-2>
         <img class="imagee" src="/assets/imgs/dashboard/person.jpg" />
       </ion-col>
@@ -37,7 +39,7 @@
       <ion-col class="icon-col" no-padding col-2>
         <ion-icon class="notification-icon" ios="ios-calendar" md="md-calendar"></ion-icon>
       </ion-col>
-    </ion-row>
+    </ion-row> -->
   </ion-row>
 
   <ion-row class="boxes">

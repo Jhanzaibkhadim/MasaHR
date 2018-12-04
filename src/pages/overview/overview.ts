@@ -15,6 +15,7 @@ import ProgressBar from 'progressbar.js'
   templateUrl: 'overview.html',
 })
 export class OverviewPage {
+  showbar: boolean = false;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.progres();
@@ -38,6 +39,15 @@ export class OverviewPage {
   }
   ionViewDidLoad() {
     console.log('ionViewDidLoad OverviewPage');
+  }
+
+  showSearchbr(){
+    console.log("here")
+    if(this.showbar){
+      this.showbar = false;
+    }else{
+      this.showbar = true;
+    }
   }
 
 }
